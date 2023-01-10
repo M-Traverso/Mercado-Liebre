@@ -182,9 +182,10 @@ img{
     right: 20px;
     top: -15px;
     z-index: 0;
+    transition: all 450ms;
 }
 
-article div i:hover{
+.fa-truck:hover {
     transform: rotate(-90deg);
 }
 
