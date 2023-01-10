@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/formsStyles.css">
+</head>
+<body>
+    <header class="main-header">
+        <img src="images/logo-mercado-liebre.svg" alt="" class="logo">        
+    </header>
+    <form action="/crear-producto" method="POST" class="create-form">
+        <div class="control-form">
+            <label></label>
+            <input type="text" name="nombre" class="control" placeholder="Nombre y apellido"></input>
+        </div>
+        <div class="control-form">
+            <label></label>
+            <input type="text" name="usuario" class="control" placeholder="Nombre de usuario"></input>
+        </div>
+        <div class="control-form">
+            <label></label>
+            <input type="email" name="email" class="control" placeholder="E-mail"></input>
+        </div>
+        <div class="control-form">
+            <label>Fecha de Nacimiento</label>
+            <input type="date" name="fecha" class="control">
+        </div>
+        <div class="control-form">
+            <label></label>
+            <input type="text" name="domicilio" class="control" placeholder="Domicilio"></input>
+        </div>
+        <div class="control-form">
+            <label>Perfil de usuario</label>
+            <input type="radio" name="perfil" value="comprador" class="control">  Comprador  </input>
+            <input type="radio" name="perfil" value="vendedor" class="control">  Vendedor  </input>
+        </div>
+        <div class="control-form">
+            <label>Intereses</label>
+            <div class="checkbox-container"><input type="checkbox" value="moda">  Moda</input></div>
+            <div class="checkbox-container"><input type="checkbox" value="electro">  Electro</input></div>
+            <div class="checkbox-container"><input type="checkbox" value="hogar">  Hogar</input></div>
+            <div class="checkbox-container"><input type="checkbox" value="jugueteria">  Jugueteria</input></div>
+            <div class="checkbox-container"><input type="checkbox" value="vidaSana">  Vida sana</input></div>                           
+        </div>
+        <div class="control-form">
+            <label>Seleccionar una foto para el perfil:</label>
+            <input type="file" name="foto" accept="jpg." class="control">            
+        </div>
+        <div class="control-form">
+            <label>Elegi tu contraseña:</label>
+            <input type="password" name="contraseña"></input>
+        </div>
+        <div class="control-form">
+            <label>Confirmar contraseña:</label>
+            <input type="password" name="confirm-contraseña"></input>
+        </div>
+        <button type="reset" class="button">Borrar</button>
+        <button type="submit" class="button">Guardar</button>
+    </form>    
+</body>
+</html>

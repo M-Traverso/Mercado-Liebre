@@ -1,0 +1,321 @@
+/* Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; */
+/* font-family: 'Roboto', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ebebeb;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+.main-header{
+    background-color: #EAC926;
+    padding: 7px;
+    height: 25vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.main-topbar-mobile{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
+
+.logo{
+    display: block;
+    max-width: 150px;
+    width: 50vw;
+    padding: 2px;
+}
+
+.main-searchbar{
+    flex-grow: 1;
+    text-align: center;
+}
+
+.searchbar{    
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ebebeb;
+    width: 90%;
+    padding: 5px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0px 0px 7px rgb(105, 105, 105);
+}
+
+.input{
+    width: 85%;
+    background-color: #ebebeb;
+    border: none;
+}
+
+.fa-magnifying-glass{
+    font-size: 80%;
+    text-align: center;
+    background-color: #ebebeb;
+    border-left: solid rgba(102,102,102,0.4) 2px;
+    margin: 0px;
+    padding: 4px;
+}
+
+.cuotas{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 5px 0px;
+}
+
+.banner{
+    width: 100vw;
+    margin-top: 25vh;
+}
+
+.main-navbar{
+    display: none;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-navbar li {
+    margin: 0 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    font-size: 8px;
+}
+
+
+
+main h2{
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    margin-top: 10px;
+}
+
+.descripcion{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    color: rgb(167, 161, 161);
+    margin-top: 12px;
+    display: none;
+    order: 2;
+    opacity: 0;
+}
+
+article div h3:hover{
+    opacity: 1;
+}
+
+img{
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.fa-bars{
+    color: #ebebeb;
+    background-color: #1259c3;
+    display: block;
+    max-width: 35px;
+    padding: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 12px;
+    margin: auto;
+}
+
+.box-main{
+    
+    margin-top: 10px;
+    position: relative;
+    z-index: -1;
+}
+
+.box-article{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    background-color: white;
+    position: relative;
+    z-index: -1;
+    
+}
+
+.fa-truck{
+    display: block;
+    font-size: 16px;
+    color: #39b54a;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    z-index: 0;
+}
+
+article div i:hover{
+    transform: rotate(-90deg);
+}
+
+.box-article-pd{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.precio{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    width: 30%;
+    align-self: center;
+
+}
+
+.descuento{
+    font-family: 'Roboto', sans-serif;
+    color: #39b54a;
+    width: 70%;
+    text-align: right;
+    font-size: 13px;
+}
+
+footer{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+footer h4{
+    font-size: 18px;
+}
+
+footer section{
+    margin: 30px;
+}
+
+footer i{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer i:hover{
+    color: #0022AA;
+}
+
+
+
+@media (min-width: 375px){
+    .main-header{
+        height: 16vh;
+    }
+    .banner{
+        margin-top: 14vh;
+    }
+    .main-topbar{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .box-main:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .descripcion{
+        display: block;
+    }
+    .main-navbar{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    main section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    main section article {
+        width: 40vw;
+    }
+    main section h2 {
+        width: 100%;
+    }
+    .logo{
+        width: 30vw;
+    }
+    .cuotas{
+        font-size: 8px;
+    }
+
+}
+
+@media (min-width: 769px){
+    .main-navbar a{
+        font-size: 12px;
+    }
+    main section article {
+        width: 20vw;
+    }
+    main section h2 {
+        width: 100%;
+    }
+    .box-footer{
+        display: flex;
+    }
+}
+
+@media (min-width: 1200px){
+    .main-topbar, .main-navbar{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .main-navbar a{
+        font-size: 13px;
+    }
+    .cuotas{
+        font-size: 12px;
+    }
+    .main-header{
+        height: 12vh;
+    }
+    .banner{
+        margin-top: 12vh;
+    }
+
+}
