@@ -24,11 +24,9 @@ main{
 .main-header{
     background-color: #EAC926;
     padding: 7px;
-    height: 25vh;
-    position: fixed;
-    top: 0;
+    /* position: fixed; */
     width: 100%;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .main-topbar-mobile{
@@ -86,7 +84,7 @@ main{
 
 .banner{
     width: 100vw;
-    margin-top: 25vh;
+    /* margin-top: 25vh; */
 }
 
 .main-navbar{
@@ -130,14 +128,14 @@ main h2{
     opacity: 0;
 }
 
-article div h3:hover{
+.descripcion:hover{
     opacity: 1;
 }
 
 img{
     width: 100%;
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .fa-bars{
@@ -156,7 +154,7 @@ img{
     
     margin-top: 10px;
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .box-article{
@@ -164,7 +162,7 @@ img{
     padding: 15px;
     background-color: white;
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
     
 }
 
@@ -239,12 +237,6 @@ footer i:hover{
 
 
 @media (min-width: 375px){
-    .main-header{
-        height: 16vh;
-    }
-    .banner{
-        margin-top: 14vh;
-    }
     .main-topbar{
         display: flex;
         flex-wrap: nowrap;
@@ -311,12 +303,6 @@ footer i:hover{
     }
     .cuotas{
         font-size: 12px;
-    }
-    .main-header{
-        height: 12vh;
-    }
-    .banner{
-        margin-top: 12vh;
     }
 
 }
